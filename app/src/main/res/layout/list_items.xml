@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#90CAF9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/personFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="First Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo" />
+
+        <TextView
+            android:id="@+id/personLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo"
+            android:layout_toRightOf="@+id/personFirstName"/>
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/personFirstName"/>
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo"
+            android:layout_toRightOf="@+id/emailLabel"
+            android:layout_below="@+id/personFirstName"
+            />
+
+        <TextView
+            android:id="@+id/campusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus: "
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/emailLabel"/>
+
+        <TextView
+            android:id="@+id/campusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campus"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo"
+            android:layout_toRightOf="@+id/campusLabel"
+            android:layout_below="@+id/emailLabel"
+            />
+
+        <TextView
+            android:id="@+id/dOEntryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Entry: "
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/campusLabel"/>
+
+        <TextView
+            android:id="@+id/personDateEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo"
+            android:layout_toRightOf="@+id/dOEntryLabel"
+            android:layout_below="@+id/campusLabel" />
+
+
+        <TextView
+            android:id="@+id/personPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="20sp"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/personDateEntry"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

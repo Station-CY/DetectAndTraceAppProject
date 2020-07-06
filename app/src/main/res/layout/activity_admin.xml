@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#90CAF9"
+    tools:context=".AdminActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo_design"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/chivo"
+        android:textColor="@android:color/black"
+        android:text="Location Records"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit"
+        android:padding="10dp"
+        android:textColorHint="#9E9E9E">
+
+
+        <TextView
+            android:id="@+id/clearLabel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_below="@id/type_campus_spinner"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/chivo"
+            android:text="CLEAR FIELDS"
+            android:textColor="@android:color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/alertLabel"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/type_campus_spinner"
+            android:background="@android:color/holo_red_light"
+            android:fontFamily="@font/chivo"
+            android:text="ALERT"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/filterByDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/chivo"
+            android:text="Select Date:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/filterByCampusTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chivo"
+            android:text="Campus:"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/type_campus_spinner"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/personType"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/filterByCampusTypeLabel"
+            android:fontFamily="@font/chivo"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/results_layout_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit"
+        android:elevation="4dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:id="@+id/text_view_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chivo"
+                android:textSize="20sp" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#90CAF9"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/roleHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo_design"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:hint="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/chivo"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/edit"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/loginToUserBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/chivo"
+        android:text="Login" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/createAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#E3F2FD"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Here? Create Account" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:id="@+id/backToHomeScreenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/chivo"
+        android:text="Back to Home Screen"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="480dp"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "564346713537",
+    "firebase_url": "https://detectandtraceapp.firebaseio.com",
+    "project_id": "detectandtraceapp",
+    "storage_bucket": "detectandtraceapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564346713537:android:0c9c3438c9341656d1ab40",
+        "android_client_info": {
+          "package_name": "com.example.detectandtraceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564346713537-knmb0385vqpsth0j1v5q5q7qinnmru03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.detectandtraceapp",
+            "certificate_hash": "2a6f82850d1501063448cde14dca57ab7429aa2a"
+          }
+        },
+        {
+          "client_id": "564346713537-u28qu28jb1f8p51rtfbchggbvcrv410j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXhqOQHsXMx29zspdhmguZOJnAikN7rtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564346713537-u28qu28jb1f8p51rtfbchggbvcrv410j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

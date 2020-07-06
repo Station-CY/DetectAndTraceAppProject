@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DetectAndTraceApp</string>
+    <string name="termsandconditions">
+        <a href="https://bit.ly/3itqHL0">Terms and Conditions</a>
+    </string>
+</resources>

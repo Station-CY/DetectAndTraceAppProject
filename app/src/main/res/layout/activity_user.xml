@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90CAF9"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_margin="25dp">
+
+        <RelativeLayout
+            android:id="@+id/firstLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginStart="5dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chivo"
+                android:textStyle="bold"
+                android:text="Welcome:"
+                android:layout_marginEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/firstNameLabel"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/name"
+                android:layout_toRightOf="@+id/name"
+                android:fontFamily="@font/chivo"
+                android:text="text"
+                android:textColor="#000000"/>
+
+
+            <Button
+                android:id="@+id/logoutUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_alignRight="@+id/firstNameLabel"
+                android:text="Logout"
+                android:fontFamily="@font/chivo"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/firstLayout"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/logo_design"/>
+
+        <RelativeLayout
+            android:background="@drawable/edit"
+            android:id="@+id/first_user_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:gravity="center"
+            android:layout_below="@id/logoImageView"
+            android:layout_above="@id/first_user_activity"
+            android:elevation="4dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/qrcodeicon"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:fontFamily="@font/chivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Scan using QR Code"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="100dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/second_user_activity"
+            android:background="@drawable/edit"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/logoImageView"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/first_user_activity">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/registericon"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/chivo"
+                android:gravity="center"
+                android:text="Admin"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fourth_user_activity"
+            android:background="@drawable/edit"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_below="@id/first_user_activity"
+            android:layout_toRightOf="@+id/third_user_activity"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/info"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:fontFamily="@font/chivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="100dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/edit"
+            android:id="@+id/third_user_activity"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:gravity="center"
+            android:layout_below="@+id/first_user_activity"
+            android:layout_marginTop="15dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/registericon"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:fontFamily="@font/chivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Update my details"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="100dp"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
+</ScrollView>

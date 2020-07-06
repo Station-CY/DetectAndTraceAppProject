@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90CAF9"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo_design"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Detect and Trace..."
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/chivo"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:background="@drawable/edit"
+        android:id="@+id/first_update_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleOfThisActivity"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_margin="20dp"
+        android:elevation="4dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/aboutTitleText"
+            android:fontFamily="@font/chivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detect and Trace is a mobile tracing application developed by two students at the Manukau Institute of Technology."
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/aboutDescrptionText"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/aboutTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is a contact tracing app that helps keep track of Manukau Institute of Technology (MIT) Staff and students locations."
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/aboutDescrption2Text"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/aboutDescrptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This application uses QR Code Technology to detect which campus you have visited and then adds the information to the local database."
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/aboutDescrption3Text"
+            android:fontFamily="@font/chivo"
+            android:layout_below="@+id/aboutDescrption2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/termsandconditions"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
